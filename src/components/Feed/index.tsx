@@ -10,13 +10,10 @@ const Feed: React.FC = () => {
       <Tab>Tweets</Tab>
 
       <Tweets>
-        <Tweet />
-        <Tweet />
-        <Tweet />
-        <Tweet />
-        <Tweet />
-        <Tweet />
-        <Tweet />
+        <Tweet name="Zafyr" nick="Zafyr" date="06 de Outubro" desc="Projeto Accord"  />
+        <Tweet name="Zafyr" nick="Zafyr" date="06 de Outubro" desc="Projeto Ecommerce"  />
+        <Tweet name="Zafyr" nick="Zafyr" date="06 de Outubro" desc="Projeto Letmeask"  />
+        <Tweet name="Zafyr" nick="Zafyr" date="06 de Outubro" desc="Projeto Pwitter"  />
       </Tweets>
     </Container>
   );

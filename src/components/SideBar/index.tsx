@@ -17,26 +17,27 @@ const SideBar: React.FC = () => {
   return (
     <Container>
       <SearchWrapper>
-        <SearchInput placeholder="Buscar no Twitter" />
+        <SearchInput placeholder="Buscar no Pwitter" />
         <SearchIcon />
       </SearchWrapper>
 
       <StickyBox>
         <Body>
           <List
-            title="Talvez você curta"
+            title="Minhas habilidades"
             elements={[
-              <FollowSuggestion name="João Pedro Marcs" nickname="jpmarcs" />,
-              <FollowSuggestion name="Felipe Marcondes" nickname="uxhungry" />,
+              <FollowSuggestion name="ReactJS" nickname="para componentização de interfaces"  />,
+              <FollowSuggestion name="Typescript" nickname="para tipar o JavaScript"  />,
               <FollowSuggestion
-                name="Joice Marcsss"
-                nickname="joypatriotakk"
+                name="MongoDB"
+                nickname="para gerenciar os dados de uma aplicação"
+                
               />,
             ]}
           />
           <List
-            title="Talvez você curta"
-            elements={[<News />, <News />, <News />, <News />]}
+            title="Alguns projetos"
+            elements={[<News feature="Accord" desc="Uma reprodução da aplicação Discord" />, <News feature="Ecommerce" desc="Um ecommerce fullstack de roupas" />, <News feature="Letmeask" desc="Uma plataforma para tirar dúvidas de programação"/>, <News feature="Pwitter" desc="Um portfolio e Twitter ao mesmo tempo" />]}
           />
         </Body>
       </StickyBox>

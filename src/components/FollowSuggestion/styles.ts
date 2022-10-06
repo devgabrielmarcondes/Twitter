@@ -14,11 +14,13 @@ export const Container = styled.div`
 `;
 
 export const Avatar = styled.div`
+  display: flex;
   width: 49px;
   height: 49px;
   border-radius: 50%;
   background: var(--gray);
   margin-right: 10px;
+  flex-shrink: 0;
 `;
 
 export const Info = styled.div`
