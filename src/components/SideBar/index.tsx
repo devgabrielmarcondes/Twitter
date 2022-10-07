@@ -5,6 +5,10 @@ import List from "../List";
 import FollowSuggestion from "../FollowSuggestion";
 import News from "../News";
 
+import MongoLogo from "../../assets/mongo.png";
+import ReactLogo from "../../assets/reactlogo.png";
+import TSLogo from "../../assets/typescriptlogo.svg";
+
 import {
   Container,
   SearchWrapper,
@@ -26,12 +30,13 @@ const SideBar: React.FC = () => {
           <List
             title="Minhas habilidades"
             elements={[
-              <FollowSuggestion name="ReactJS" nickname="para componentização de interfaces"  />,
-              <FollowSuggestion name="Typescript" nickname="para tipar o JavaScript"  />,
+              <FollowSuggestion name="ReactJS" nickname="para componentização de interfaces" url={ReactLogo} alink="https://reactjs.org" />,
+              <FollowSuggestion name="Typescript" nickname="para tipar o JavaScript"  url={TSLogo} alink="https://www.typescriptlang.org" />,
               <FollowSuggestion
                 name="MongoDB"
                 nickname="para gerenciar os dados de uma aplicação"
-                
+                url={MongoLogo}
+                alink="https://www.mongodb.com"
               />,
             ]}
           />

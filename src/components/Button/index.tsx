@@ -4,7 +4,7 @@ interface Props {
   outlined?: boolean;
 }
 
-export default styled.button<Props>`
+export default styled.a<Props>`
   background: ${(props) => (props.outlined ? "transparent" : "var(--twitter)")};
   color: ${(props) => (props.outlined ? "var(--twitter)" : "var(--white)")};
   border: ${(props) => (props.outlined ? "1px solid var(--twitter)" : "none")};
@@ -17,6 +17,7 @@ export default styled.button<Props>`
 
   cursor: pointer;
   outline: 0;
+  text-decoration: 0;
 
   &:hover {
     background: ${(props) =>

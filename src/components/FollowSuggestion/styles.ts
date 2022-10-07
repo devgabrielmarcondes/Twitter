@@ -13,12 +13,11 @@ export const Container = styled.div`
   }
 `;
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
   display: flex;
   width: 49px;
   height: 49px;
   border-radius: 50%;
-  background: var(--gray);
   margin-right: 10px;
   flex-shrink: 0;
 `;

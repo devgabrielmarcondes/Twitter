@@ -5,13 +5,15 @@ import { Container, Avatar, Info, FollowButton } from "./styles";
 interface Props {
   name: string;
   nickname: string;
+  url: string;
+  alink?: string;
 }
 
-const FollowSuggestion: React.FC<Props> = ({ name, nickname }) => {
+const FollowSuggestion: React.FC<Props> = ({ name, nickname, url, alink }) => {
   return (
     <Container>
       <div>
-        <Avatar />
+        <Avatar src={url} />
 
         <Info>
           <strong>{name}</strong>
@@ -19,7 +21,7 @@ const FollowSuggestion: React.FC<Props> = ({ name, nickname }) => {
         </Info>
       </div>
 
-      <FollowButton outlined>Checar</FollowButton>
+      <FollowButton outlined href={alink} target="_blank">Checar</FollowButton>
     </Container>
   );
 };
