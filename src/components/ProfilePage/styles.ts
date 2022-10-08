@@ -22,21 +22,19 @@ export const Banner = styled.div`
   width: 100%;
   height: min(33vw, 199px);
 
-  background: var(--twitter);
-
   position: relative;
 `;
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
   width: max(45px, min(135px, 22vw));
   height: max(45px, min(135px, 22vw));
 
   border: 3.75px solid var(--primary);
-  background: var(--gray);
   border-radius: 50%;
 
   position: absolute;
 
+  flex-shrink: 0;
   bottom: max(-60px, -10vw);
   left: 15px;
 `;

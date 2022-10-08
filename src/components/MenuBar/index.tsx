@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "../Button";
+import Marcondes from "../../assets/marcondes.jpeg";
 
 import {
   Container,
@@ -55,7 +56,7 @@ const MenuBar: React.FC = () => {
       </Topside>
 
       <Botside>
-        <Avatar />
+        <Avatar src={Marcondes} />
 
         <ProfileData>
           <strong>Gabriel Marcondes</strong>

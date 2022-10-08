@@ -1,6 +1,7 @@
 import React from "react";
 
 import Tweet from "../Tweet";
+import Marcondes from "../../assets/marcondes.jpeg";
 
 import { Container, Tab, Tweets } from "./styles";
 
@@ -10,10 +11,10 @@ const Feed: React.FC = () => {
       <Tab>Tweets</Tab>
 
       <Tweets>
-        <Tweet name="Zafyr" nick="Zafyr" date="06 de Outubro" desc="Projeto Accord"  />
-        <Tweet name="Zafyr" nick="Zafyr" date="06 de Outubro" desc="Projeto Ecommerce"  />
-        <Tweet name="Zafyr" nick="Zafyr" date="06 de Outubro" desc="Projeto Letmeask"  />
-        <Tweet name="Zafyr" nick="Zafyr" date="06 de Outubro" desc="Projeto Pwitter"  />
+        <Tweet url={Marcondes} name="Gabriel Marcondes" nick="gab_mrcd" date="06 de Outubro" desc="Projeto Accord"  />
+        <Tweet url={Marcondes} name="Gabriel Marcondes" nick="gab_mrcd" date="06 de Outubro" desc="Projeto Ecommerce"  />
+        <Tweet url={Marcondes} name="Gabriel Marcondes" nick="gab_mrcd" date="06 de Outubro" desc="Projeto Letmeask"  />
+        <Tweet url={Marcondes} name="Gabriel Marcondes" nick="gab_mrcd" date="06 de Outubro" desc="Projeto Pwitter"  />
       </Tweets>
     </Container>
   );

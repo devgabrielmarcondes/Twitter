@@ -1,6 +1,8 @@
 import React from "react";
 
 import Feed from "../Feed";
+import Marcondes from "../../assets/marcondes.jpeg";
+import BannerImg from "../../assets/alt-banner-small.jpg";
 
 import {
   Container,
@@ -16,8 +18,8 @@ import {
 const ProfilePage: React.FC = () => {
   return (
     <Container>
-      <Banner>
-        <Avatar />
+      <Banner style={{ backgroundImage:`url(${BannerImg})`, backgroundRepeat:"no-repeat", backgroundPosition:"center" }} >
+        <Avatar src={Marcondes} />
       </Banner>
 
       <ProfileData>
