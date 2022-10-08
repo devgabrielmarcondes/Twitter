@@ -24,9 +24,10 @@ export interface Props {
   date: string;
   desc: string;
   url: string;
+  urlimg?: string;
 }
 
-const Tweet: React.FC<Props> = ({name, nick, date, desc, url}) => {
+const Tweet: React.FC<Props> = ({name, nick, date, desc, url, urlimg}) => {
   return (
     <Container>
       <Retweeted>
@@ -47,7 +48,7 @@ const Tweet: React.FC<Props> = ({name, nick, date, desc, url}) => {
 
           <Description>{desc}</Description>
 
-          <ImageContent />
+          <ImageContent src={urlimg} />
 
           <Icons>
             <Status>

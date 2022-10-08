@@ -102,13 +102,15 @@ export const Description = styled.p`
   margin-top: 4px;
 `;
 
-export const ImageContent = styled.div`
+export const ImageContent = styled.img`
   margin-top: 12px;
   width: 100%;
   height: min(285px, max(175px, 41vw));
 
   background: var(--outline);
   border-radius: 14px;
+
+  flex-shrink: 0;
 
   cursor: pointer;
   &:hover {
